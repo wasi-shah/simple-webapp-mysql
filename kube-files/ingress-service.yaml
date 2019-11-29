@@ -1,0 +1,9 @@
+ apiVersion: "extensions/v1beta1"
+kind: "Ingress"
+metadata:
+  name: "frontend-service"
+  namespace: "default"
+spec:
+  backend:
+    serviceName: "webapp-service"
+    servicePort: 8080
